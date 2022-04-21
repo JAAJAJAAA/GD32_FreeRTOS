@@ -1,0 +1,42 @@
+/*
+ * @Description: 
+ * @Author: mkx
+ * @Date: 2022-04-12 09:07:46
+ * @LastEditTime: 2022-04-13 09:10:31
+ * @LastEditors: mkx
+ * @FilePath: \GD32_FreeRTOS\USER\UserFlag.c
+ * @Reference: 
+ */
+#include "FreeRTOS.h"
+#include "typedef.h"
+#include "queue.h"
+#include "semphr.h"
+
+#define u8TestMode unFlag0.stBit.b0
+
+TYPE_BYTE unFlag0;
+TYPE_BYTE unFlag1;
+
+
+u32 u32Usart0IRQSetTimes;   //串口中断触发数量
+float temperature;//温度
+float vref_value;//AD值
+
+
+
+
+
+
+TaskHandle_t StartTask_Handler;//起始任务句柄
+
+SemaphoreHandle_t xBinarySemaphore;//二进制信号量测试
+SemaphoreHandle_t u32RuntimeSemaphore;//计数信号量测试
+
+
+
+QueueHandle_t xRunTimeQueue;//运行时间队列
+
+
+
+
+

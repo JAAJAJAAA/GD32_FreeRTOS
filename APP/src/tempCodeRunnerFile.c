@@ -1,0 +1,1 @@
+Global_Store_Task_Handle

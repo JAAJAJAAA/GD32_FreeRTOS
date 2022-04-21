@@ -1,0 +1,19 @@
+{
+    "C_Cpp.errorSquiggles": "Disabled",
+    "files.associations": {
+        "systick.h": "c",
+        "userconfig.h": "c",
+        "typedef.h": "c",
+        "usart.h": "c",
+        "queue.h": "c",
+        "semphr.h": "c",
+        "adc.h": "c",
+        "i2c.h": "c",
+        "pid.h": "c",
+        "storetask.h": "c",
+        "math.h": "c",
+        "motortask.h": "c",
+        "gd32f30x_timer.h": "c",
+        "pwm.h": "c"
+    }
+}
